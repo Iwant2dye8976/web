@@ -5,14 +5,17 @@ function Decode()
     for (var i = 0; i < inputText.value.length; i += 2) {
         try {
             var hexSubstring = inputText.value.substr(i, 2);
-            if (hexSubstring.length %2 !== 0) {
-                document.getElementById("outputField").value = "Độ dài chuỗi không hợp lệ";
+            if (parseInt(hexSubstring.length) %2 != 0) {
+                document.getElementById("outputField").value = `Độ dài chuỗi không hợp lệ`;
+                return;
             }
             var v = parseInt(hexSubstring, 16);
-            if (!!v) {
+            console.log(v);
+            if (!isNaN(v)) {
                 str += String.fromCharCode(v);
             } else {
-                document.getElementById("outputField").value = "Không thể chuyển đổi chuỗi";
+                document.getElementById("outputField").value = `Không thể chuyển đổi thành số thập lục phân`;
+                return;
             }
             document.getElementById("outputField").value = str;
         } catch (error) {
@@ -21,11 +24,6 @@ function Decode()
         }
     }
 }
-    
-
-
-
-
 function Copy2Clipboard() {
     // Lấy giá trị của trường output
     var copyText = document.getElementById("outputField");
