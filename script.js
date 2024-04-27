@@ -5,7 +5,7 @@ function Decode()
     for (var i = 0; i < inputText.value.length; i += 2) {
         try {
             var hexSubstring = inputText.value.substr(i, 2);
-            if (hexSubstring.length !== 2) {
+            if (hexSubstring.length %2 !== 0) {
                 document.getElementById("outputField").value = "Độ dài chuỗi không hợp lệ";
             }
             var v = parseInt(hexSubstring, 16);
