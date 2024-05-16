@@ -7,16 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <h4>Dán văn bản hex muốn giải mã ở đây:</h2>
-        <textarea id="inputField" placeholder="Nhập mã hex" maxlength="32767"></textarea>
+    <div id="main">
+        <div id="input-section">
+            <h4>Dán văn bản hex muốn giải mã ở đây:</h2>
+            <textarea id="inputField" placeholder="Nhập mã hex" maxlength="32767"></textarea>
+        </div>
+        <div class="buttons">
+            <button class="buttons-section" id="BtnDecode" onclick="processDecode()">Decode</button>
+        </div>
+        <div id="output-section">
+            <h4>Sao chép văn bản đã giải mã ở đây:</h2>
+            <textarea id="outputField" maxlength="32767"></textarea>
+        </div>
+        <div class="buttons">
+            <button class="buttons-section" id="btnCopy" onclick="Copy2Clipboard()">Copy</button>
+        </div>
     </div>
-    <button id="BtnDecode" onclick="Decode()">Decode</button>
-    <div>
-        <h4>Sao chép văn bản đã giải mã ở đây:</h2>
-        <textarea id="outputField" maxlength="32767"></textarea>
-    </div>
-    <button id="btnCopy" onclick="Copy2Clipboard()">Copy</button>
     <script src="script.js"></script>
 </body>
 </html>

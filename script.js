@@ -1,10 +1,18 @@
-function Decode()
+var fString = () => {
+    var inputText = document.getElementById("inputField")
+    if(inputText){
+        return inputText.value.split(' ').join('')
+    }
+    else return '';
+}
+
+function Decode(fString)
 {
-    var inputText = document.getElementById("inputField");
+    // var inputText = document.getElementById("inputField");
     var str = '';
-    for (var i = 0; i < inputText.value.length; i += 2) {
+    for (var i = 0; i < fString.length; i += 2) {
         try {
-            var hexSubstring = inputText.value.substr(i, 2);
+            var hexSubstring = fString.substr(i, 2);
             if (hexSubstring.length !== 2) {
                 alert("Độ dài chuỗi không hợp lệ.");
                 throw new Error('Chuỗi không hợp lệ để chuyển đổi thành số thập lục phân.');
@@ -23,10 +31,6 @@ function Decode()
         }
     }
 }
-    
-
-
-
 
 function Copy2Clipboard() {
     // Lấy giá trị của trường output
@@ -45,4 +49,9 @@ function Copy2Clipboard() {
     else{
         alert("Có gì đâu mà copy?");
     }
+  }
+
+  function processDecode(){
+    var hexString = fString()
+    Decode(hexString)
   }
