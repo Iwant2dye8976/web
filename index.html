@@ -3,26 +3,1000 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hex2Text</title>
+    <title>Unoffical Calamity Mod Wiki</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div id="main">
-        <div id="input-section">
-            <h4>Dán văn bản hex muốn giải mã ở đây:</h2>
-            <textarea id="inputField" placeholder="Nhập mã hex" maxlength="32767"></textarea>
-        </div>
-        <div class="buttons">
-            <button class="buttons-section" id="BtnDecode" onclick="processDecode()">Decode</button>
-        </div>
-        <div id="output-section">
-            <h4>Sao chép văn bản đã giải mã ở đây:</h2>
-            <textarea id="outputField" maxlength="32767"></textarea>
-        </div>
-        <div class="buttons">
-            <button class="buttons-section" id="btnCopy" onclick="Copy2Clipboard()">Copy</button>
+    <div>
+        <nav class="navbar header">
+            <div class="container-fluid">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link home-img" href="https://www.wiki.gg/"><img class="navbar-img" src="https://calamitymod.wiki.gg/resources/assets/header-logo.png" alt="Home"></a>
+                    </li>
+                </ul>
+                <div>
+                    <a class="account" href="https://calamitymod.wiki.gg/index.php?title=Special:CreateAccount&returnto=Calamity+Mod+Wiki">Create account</a>
+                    <a class="account" href="https://calamitymod.wiki.gg/index.php?title=Special:UserLogin&returnto=Calamity+Mod+Wiki">Log in</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="container-fluid d-flex justify-content-center">
+        <div>
+            <img src="https://calamitymod.wiki.gg/es/images/e/e6/Site-logo.png">
         </div>
     </div>
-    <script src="script.js"></script>
+        <div>
+            <div class="row">
+                <div class="col-2">
+                    <div class="vertical-links pt-5">
+                        <div>
+                            <a class="links" href="#" onclick="play()">Main page</a><br>
+                            <a class="links" href="#" onclick="play()">Recent changes</a><br>
+                            <a class="links" href="#" onclick="play()">Random page</a><br>
+                            <a class="links" href="#" onclick="play()">Community noticeboard</a><br>
+                            <a class="links" href="#" onclick="play()">Admin noticeboard</a><br>
+                            <a class="links" href="#" onclick="play()">Wiki rules</a><br>
+                        </div>
+                        <div class="categories">
+                            <p>Resources</p>
+                            <hr>
+                        </div>
+                        <div>
+                            <a class="links" href="#" onclick="play()">Class setups</a><br>
+                            <a class="links" href="#" onclick="play()">Guidese</a><br>
+                            <a class="links" href="#" onclick="play()">Lore</a><br>
+                            <a class="links" href="#" onclick="play()">Mod progression</a><br>
+                            <a class="links" href="#" onclick="play()">Recipe finder</a><br>
+                            <a class="links" href="#" onclick="play()">Vanilla changes</a><br>
+                        </div>
+                        <div class="categories">
+                            <p>Items</p>
+                            <hr>
+                        </div>
+                        <div>
+                            <a class="links" href="#" onclick="play()">Accessories</a><br>
+                            <a class="links" href="#" onclick="play()">Armor</a><br>
+                            <a class="links" href="#" onclick="play()">Drops</a><br>
+                            <a class="links" href="#" onclick="play()">Tools</a><br>
+                            <a class="links" href="#" onclick="play()">Vanilla item recipes</a><br>
+                            <a class="links" href="#" onclick="play()">Weapons</a><br>
+                        </div>
+                        <div class="categories">
+                            <p>Characters</p>
+                            <hr>
+                        </div>
+                        <div>
+                            <a class="links" href="#" onclick="play()">Bosses</a><br>
+                            <a class="links" href="#" onclick="play()">Critters</a><br>
+                            <a class="links" href="#" onclick="play()">Enemies</a><br>
+                            <a class="links" href="#" onclick="play()">Enemy list</a><br>
+                            <a class="links" href="#" onclick="play()">NPCs</a><br>
+                        </div>
+                        <div class="categories">
+                            <p>Portals</p>
+                            <hr>
+                        </div>
+                        <div>
+                            <a class="links" href="#" onclick="play()">Website</a><br>
+                            <a class="links" href="#" onclick="play()">Forum Page</a><br>
+                            <a class="links" href="#" onclick="play()">Discord</a><br>
+                            <a class="links" href="#" onclick="play()">YouTube</a><br>
+                            <a class="links" href="#" onclick="play()">Twitter</a><br>
+                            <a class="links" href="#" onclick="play()">Merchandise</a><br>
+                        </div>
+                        <div class="categories">
+                            <p>Tools</p>
+                            <hr>
+                        </div>
+                        <div>
+                            <a class="links" href="#" onclick="play()">What links here</a><br>
+                            <a class="links" href="#" onclick="play()">Related changes</a><br>
+                            <a class="links" href="#" onclick="play()">New page</a><br>
+                            <a class="links" href="#" onclick="play()">Special pages</a><br>
+                            <a class="links" href="#" onclick="play()">Printable version</a><br>
+                            <a class="links" href="#" onclick="play()">Permanent link</a><br>
+                            <a class="links" href="#" onclick="play()">Page information</a><br>
+                            <a class="links" href="#" onclick="play()">Page values</a><br>
+                            <a class="links" href="#" onclick="play()">Cite this page</a><br>
+                        </div>
+                        <div class="categories">
+                            <p>In other languages</p>
+                            <hr>
+                        </div>
+                        <div>
+                            <a class="links" href="#" onclick="play()">Русский</a><br>
+                            <a class="links" href="#" onclick="play()">Español</a><br>
+                            <a class="links" href="#" onclick="play()">中文</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10" id="right-side-body">
+                    <div class="row">
+                        <nav class="d-flex justify-content-start align-items-center col-3 navbar mt-0 p-0">
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link text-white" href="#" onclick="play()">Main page</a></li>
+                                <li class="nav-item"><a class="nav-link links" href="#" onclick="play()">Discusion</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="col-5 d-flex justify-content-end align-items-center mt-0 p-0">
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link text-white" href="#" onclick="play()">Read</a></li>
+                                <li class="nav-item"><a class="nav-link links" href="#" onclick="play()">View source</a></li>
+                                <li class="nav-item"><a class="nav-link links" href="#" onclick="play()">View history</a></li>
+                            </ul>
+                        </nav>
+                        <form class="d-flex align-items-center col-4 pt-3">
+                            <div id="search-box">
+                                <input type="text" placeholder="Search Calamity Mod Wiki">
+                                <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="container" id="rightside-container">
+                        <div class="row">
+                            <div class="col container border border-danger border-5 rounded mt-5">
+                                <div id="introduce">
+                                    <h2 class="text-white mb-0">Welcome to the Unofficial Calamity Mod Wiki,</h2><br>
+                                    <p class="text-white">the comprehensive reference written and maintained by the players.</p>
+                                    <p class="text-white">86 active users are currently maintaining 2,697 pages and 7,079 files.</p>
+                                </div>
+                                <div id="social-media">
+                                    <a onclick="play()">Website•</a>
+                                    <a onclick="play()">Forum Page•</a>
+                                    <a onclick="play()">Discord•</a>
+                                    <a onclick="play()">YouTube Channel•</a>
+                                    <a onclick="play()"> onclick="play()"Twitter</a>
+                                </div>
+                                <hr style="color: gray;height: 2px;">
+                                <div class="d-flex" id="game-updates">
+                                    <a onclick="play()">Recent Changes•</a>
+                                    <a onclick="play()">Admin noticeboard•</a>
+                                    <a onclick="play()">Community noticeboard•</a>
+                                    <a onclick="play()">Wiki rules•</a>
+                                    <a onclick="play()">Sandbox•</a>
+                                    <a onclick="play()">Version history project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-2">
+                            <div class="d-flex row">
+                                <div class="border border-danger border-1 rounded col-8">
+                                    <table class="table">
+                                        <th class="text-center text-white fs-5">The Mod</th>
+                                    </table>
+                                    <p class="text-white">The Calamity Mod is a large content mod for Terraria which adds many hours of endgame content and dozens of enemies and bosses dispersed throughout the vanilla game's progression. The Calamity Mod also features several harder difficulty modes, five new biomes and new structures, a new class, more than forty new songs, over fifty recipes for previously uncraftable vanilla items and other assorted changes to vanilla gameplay.</p>
+                                    <p class="text-white">Note: Much of the communication regarding the Calamity Mod Wiki is done via the Calamity Mod Discord Server. If you have questions or issues regarding editing this wiki, asking via Discord is the best way to get your issue addressed quickly.</p>
+                                    <p class="text-white">If you are interested in helping edit the Wiki, you can ask for the Wiki Contributor role in the Discord server to gain access to a channel for discussions and asking questions about editing.</p>
+                                </div>
+                                <div class="border border-danger rounded col-4">
+                                    <table class="table">
+                                        <th class="text-center text-white fs-5">Latest Supported Versions</th>
+                                    </table>
+                                    <div id="version-suport">
+                                        <table class="table">
+                                            <th class="text-center text-white">Calamity Mod</th>
+                                            <tr>
+                                                <td><a class="links">2.0.4.002 onclick="play()"</a> — <a class="links">Changelog</a></td>
+                                            </tr>
+                                            <th class="text-center text-white">Calamity Mod Music</th>
+                                            <tr>
+                                                <td><a class="links">2.0.4.002 onclick="play()"</a> — <a class="links">Changelog</a></td>
+                                            </tr>
+                                            <th class="text-center text-white" onclick="play()"><a class="links">tModLoader</a></th>
+                                            <tr>
+                                                <td><a class="links" onclick="play()"><a class="links">2024.3.3.2</a></td>
+                                            </tr>
+                                            <th class="text-center text-white" onclick="play()"><a class="links">Terraria</a></th>
+                                            <tr>
+                                                <td>1.4.4.9</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-2">
+                            <div class="row" id="uper-table">
+                                <div class="col-6 leftside-tables border border-danger rounded" id="items-table">
+                                    <div>
+                                        <div>
+                                            <table class="table">
+                                                <th><a class="links-table" onclick="play()"><b>Items</b></a></th>
+                                            </table>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/d/d7/Angel_Treads.png/20px-Angel_Treads.png" alt="Accessories">
+                                                    <a class="links-table" onclick="play()">Accessories</a>
+                                                </div>
+                                                <div class="col-5">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/d/da/Cosmic_Plushie.png/20px-Cosmic_Plushie.png" alt="Dedicated content">
+                                                    <a class="links-table" onclick="play()">Dedicated content</a>
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/a/a4/Bear.png/20px-Bear.png" alt="Pets">
+                                                    <a class="links-table" onclick="play()">Pets</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/4/4c/Marksman_Round.png/10px-Marksman_Round.png" alt="Ammunition">
+                                                    <a class="links-table" onclick="play()">Ammunition</a>
+                                                </div>
+                                                <div class="col-5">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/8/88/Elemental_Dye.png/15px-Elemental_Dye.png" alt="Dyes">
+                                                    <a class="links-table" onclick="play()">Dyes</a>
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/6/64/Omega_Healing_Potion.png/20px-Omega_Healing_Potion.png" alt="Potions">
+                                                    <a class="links-table" onclick="play()">Potions</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/8/8f/Auric_Tesla_Body_Armor.png/20px-Auric_Tesla_Body_Armor.png" alt="Armor">
+                                                    <a class="links-table" onclick="play()">Armor</a>
+                                                </div>
+                                                <div class="col-5">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/a/af/Silva_Table.png/20px-Silva_Table.png" alt="Furniture">
+                                                    <a class="links-table" onclick="play()">Furniture</a>
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/2/2d/Crystyl_Crusher.png/20px-Crystyl_Crusher.png" alt="Tools">
+                                                    <a class="links-table" onclick="play()">Tools</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/f/f7/Perennial_Bar.png/20px-Perennial_Bar.png" alt="Bars">
+                                                    <a class="links-table" onclick="play()">Bars</a>
+                                                </div>
+                                                <div class="col-5">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/d/d0/Hermit_Crab.png/20px-Hermit_Crab.png" alt="Minions">
+                                                    <a class="links-table" onclick="play()">Minions</a>
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/b/b6/Elumplate_Wall.png/20px-Elumplate_Wall.png" alt="Walss">
+                                                    <a class="links-table" onclick="play()">Walls</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/d/dc/Profaned_Slab.png/15px-Profaned_Slab.png" alt="Blocks">
+                                                    <a class="links-table" onclick="play()">Blocks</a>
+                                                </div>
+                                                <div class="col-5">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/1/16/Astral_Chunk.png/20px-Astral_Chunk.png" alt="Miscellaneous">
+                                                    <a class="links-table" onclick="play()">Miscellaneousv</a>
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/9/93/Crystalline.png/20px-Crystalline.png" alt="Weapons">
+                                                    <a class="links-table" onclick="play()">Weapons</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/8/88/Pearl_Shard.png/15px-Pearl_Shard.png" alt="Crafting materials">
+                                                    <a class="links-table" onclick="play()">Crafting materials</a>
+                                                </div>
+                                                <div class="col-5">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/a/ab/Alicorn_%28buff%29.png/20px-Alicorn_%28buff%29.png" alt="Mounts">
+                                                    <a class="links-table" onclick="play()">Mounts</a>
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/a/a1/Starlight_Wings.png/20px-Starlight_Wings.png" alt="Wings">
+                                                    <a class="links-table" onclick="play()">Wings</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/3/38/Draedon%27s_Forge.png/20px-Draedon%27s_Forge.png" alt="Crafting stations">
+                                                    <a class="links-table" onclick="play()">Crafting stations</a>
+                                                </div>
+                                                <div class="col-5">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/0/0c/Uelibloom_Ore.png/20px-Uelibloom_Ore.png" alt="Ores">
+                                                    <a class="links-table" onclick="play()">Ores</a>
+                                                </div>
+                                                <div class="col-3">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="https://calamitymod.wiki.gg/images/b/ba/Asgard%27s_Valor.png" alt="Asgards_Valor" id="Asgards-Valor">
+                                    </div>
+                                </div>
+                                <div class="col-6 border border-danger rounded">
+                                    <div>
+                                        <table class="table">
+                                            <th><a class="links-table" onclick="play()"><b>Bosses</b></a> and <a class="links-table" onclick="play()"><b>Minibosses</b></a></th>
+                                        </table>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h6 class="text-white"><b>Mini Bosses</b></h6>
+                                            </div>
+                                            <div class="col-6">
+                                                <h6 class="text-white"><b>Pre-Hardmode bosses</b></h6>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/7/72/Giant_Clam_map.png/20px-Giant_Clam_map.png" alt="Giant Clam">
+                                                <a class="links-table" onclick="play()">Giant Clam</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/6/6d/Desert_Scourge_map.png/25px-Desert_Scourge_map.png" alt="Desert Scourge">
+                                                <a class="links-table" onclick="play()">Desert Scourge</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/4/4f/Earth_Elemental_Banner.png" alt="Earth Elemental">
+                                                <a class="links-table" onclick="play()">Earth Elemental</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/9/9f/Crabulon_map.png/25px-Crabulon_map.png" alt="Crabulon">
+                                                <a class="links-table" onclick="play()">Crabulon</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/b/b8/Cloud_Elemental_Banner.png" alt="Cloud Elemental">
+                                                <a class="links-table" onclick="play()">Cloud Elemental</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/d/d2/Hive_Mind_map.png/25px-Hive_Mind_map.png" alt="The Hive Mind">
+                                                <a class="links-table" onclick="play()">The Hive Mind</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/c/c1/Cragmaw_Mire_map.png/20px-Cragmaw_Mire_map.png" alt="Cragmaw Mire">
+                                                <a class="links-table" onclick="play()">Cragmaw Mire</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/e/e3/Perforator_Hive_map.png/25px-Perforator_Hive_map.png" alt="The Perforators">
+                                                <a class="links-table" onclick="play()">The Perforators</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/9/95/Armored_Digger_Head.png/20px-Armored_Digger_Head.png" alt="Armored Digger">
+                                                <a class="links-table" onclick="play()">Armored Digger</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/6/63/Ebonian_Paladin_map.png/25px-Ebonian_Paladin_map.png" alt="Ebonian Paladin">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/4/41/Slime_God_Core_map.png/20px-Slime_God_Core_map.png" alt="Slime God Core">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/f/f2/Crimulan_Paladin_map.png/25px-Crimulan_Paladin_map.png" alt="Crimulan Paladin">
+                                                <a class="links-table"> onclick="play()"The Slime God</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/b/b0/Great_Sand_Shark_map.png/20px-Great_Sand_Shark_map.png" alt="Great Sand Shark">
+                                                <a class="links-table" onclick="play()">Great Sand Shark</a>
+                                            </div>
+                                            <div class="col-6">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/3/34/Plaguebringer_Banner.png" alt="Plaguebringer">
+                                                <a class="links-table" onclick="play()">Plaguebringer</a>
+                                            </div>
+                                            <div class="col-6">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/6/6e/Calamari.png/20px-Calamari.png" alt="Colossal Squid">
+                                                <a class="links-table" onclick="play()">Colossal Squid</a>
+                                            </div>
+                                            <div class="col-6">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/6/6c/Reaper_Shark_Banner.png" alt="Reaper Shark">
+                                                <a class="links-table" onclick="play()">Reaper Shark</a>
+                                            </div>
+                                            <div class="col-6">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/2/24/Eidolon_Wyrm_Banner.png" alt="Eidolon Wyrm">
+                                                <a class="links-table" onclick="play()">Eidolon Wyrm</a>
+                                            </div>
+                                            <div class="col-6">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/d/db/Mauler_map.png/22px-Mauler_map.png" alt="Mauler">
+                                                <a class="links-table" onclick="play()">Mauler</a>
+                                            </div>
+                                            <div class="col-6">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/5/57/Nuclear_Terror_map.png/22px-Nuclear_Terror_map.png" alt="Nuclear Terror">
+                                                <a class="links-table" onclick="play()">Nuclear Terror</a>
+                                            </div>
+                                            <div class="col-6">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h6 class="text-white">Hardmode bosses</h6>
+                                            </div>
+                                            <div class="col-6">
+                                                <h6 class="text-white">Post-Moon Lord bosses</h6>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/1/1e/Cryogen_map.png/25px-Cryogen_map.png" alt="Cryogen">
+                                                <a class="links-table" onclick="play()">Cryogen</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/6/6a/Guardian_Commander_map.png/16px-Guardian_Commander_map.png" alt="Guardian Commander">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/8/84/Guardian_Defender_map.png/20px-Guardian_Defender_map.png" alt="Guardian Defender">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/6/6a/Guardian_Healer_map.png/20px-Guardian_Healer_map.png" alt="Guardian Healer">
+                                                <a class="links-table" onclick="play()">Profaned Guardians</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/c/c4/Aquatic_Scourge_map.png/25px-Aquatic_Scourge_map.png" alt="Aquatic Scourge">
+                                                <a class="links-table" onclick="play()">Aquatic Scourge</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/7/7b/Dragonfolly_map.png/20px-Dragonfolly_map.png" alt="Dragonfolly">
+                                                <a class="links-table" onclick="play()">Dragonfolly</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/0/07/Brimstone_Elemental_map.png/25px-Brimstone_Elemental_map.png" alt="Brimstone Elemental">
+                                                <a class="links-table" onclick="play()">Brimstone Elemental</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/f/fb/Providence_map.png/35px-Providence_map.png" alt="Providence">
+                                                <a class="links-table" onclick="play()">Providence, the Profaned Goddess</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/9/90/Calamitas_Clone_map.png/25px-Calamitas_Clone_map.png" alt="Calamitas Clone">
+                                                <a class="links-table" onclick="play()">Calamitas Clone</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/7/72/Storm_Weaver_map.png/20px-Storm_Weaver_map.png" alt="Storm Weaver">
+                                                <a class="links-table" onclick="play()">Storm Weaver</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/1/1b/Leviathan_map.png/30px-Leviathan_map.png" alt="Leviathan">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/3/31/Anahita_map.png/20px-Anahita_map.png" alt="Anahita">
+                                                <a class="links-table" onclick="play()">Leviathan and Anahita</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/7/70/Ceaseless_Void_map.png/30px-Ceaseless_Void_map.png" alt="Ceaseless Void">
+                                                <a class="links-table" onclick="play()">Ceaseless Void</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/9/91/Astrum_Aureus_map.png/25px-Astrum_Aureus_map.png" alt="Astrum Aureus">
+                                                <a class="links-table" onclick="play()">Astrum Aureus</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/5/52/Signus_map.png/20px-Signus_map.png" alt="Signus">
+                                                <a class="links-table" onclick="play()">Signus, Envoy of the Devourer</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/f/f2/Plaguebringer_Goliath_map.png/20px-Plaguebringer_Goliath_map.png" alt="Plaguebringer Goliath">
+                                                <a class="links-table" onclick="play()">The Plaguebringer Goliath</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/e/e6/Polterghast_map.png/25px-Polterghast_map.png" alt="Polterghast">
+                                                <a class="links-table" onclick="play()">Polterghast</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/c/cf/Ravager_map.png/25px-Ravager_map.png" alt="Ravager">
+                                                <a class="links-table" onclick="play()">Ravager</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/7/7d/The_Old_Duke_map.png/25px-The_Old_Duke_map.png" alt="The Old Duke">
+                                                <a class="links-table" onclick="play()">The Old Duke</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/d/d6/Astrum_Deus_map.png/25px-Astrum_Deus_map.png" alt="Astrum Deus">
+                                                <a class="links-table" onclick="play()">Astrum Deus</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/f/fb/Devourer_of_Gods_map.png/25px-Devourer_of_Gods_map.png" alt="Devourer of Gods">
+                                                <a class="links-table" onclick="play()">The Devourer of Gods</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/7/70/Yharon_map.png/25px-Yharon_map.png" alt="Yharon">
+                                                <a class="links-table" onclick="play()">Yharon, Dragon of Rebirth</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/2/21/Artemis_Phase_1_map.png/25px-Artemis_Phase_1_map.png" alt="Artemis">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/a/a4/Apollo_Phase_1_map.png/25px-Apollo_Phase_1_map.png" alt="Apollo">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/e/e4/Thanatos_Head_map.png/25px-Thanatos_Head_map.png" alt="Thanatos">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/4/44/Ares_map.png/25px-Ares_map.png" alt="Ares">
+                                                <a class="links-table" onclick="play()">Exo Mechs</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="https://calamitymod.wiki.gg/images/thumb/a/a4/Calamitas_map.png/25px-Calamitas_map.png" alt="Calamitas">
+                                                <a class="links-table" onclick="play()">Supreme Witch, Calamitas</a>
+                                            </div>
+                                        </div>
+                                        <img src="https://calamitymod.wiki.gg/images/7/7d/Hive_Mind_map_2.png" alt="Hive Mind" id="Hive-Mind">
+                                    </div>
+                                </div>
+                                <div class="col-6 border border-danger rounded" id="mechanics-table">
+                                    <div>
+                                        <div>
+                                            <table class="table">
+                                                <th><a class="links-table" onclick="play()"><b>Mechanics</b></a></th>
+                                            </table>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/2/2c/Eclipse_Mirror.png/20px-Eclipse_Mirror.png" alt="Aggro">
+                                                    <a class="links-table" onclick="play()">Aggro</a>
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/6/6a/Plague.png/20px-Plague.png" alt="Debuffs">
+                                                    <a class="links-table" onclick="play()">Debuffs</a>
+                                                </div>
+                                                <div class="col-5">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/a/a0/Deific_Amulet.png/15px-Deific_Amulet.png" alt="Immunity frames">
+                                                    <a class="links-table" onclick="play()">Immunity frames</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="https://terraria.wiki.gg/images/thumb/4/44/Bestiary_icon.png/20px-Bestiary_icon.png" alt="Bestiary">
+                                                    <a class="links-table" onclick="play()">Bestiary</a>
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/c/cc/Ornate_Shield.png/20px-Ornate_Shield.png" alt="Defense">
+                                                    <a class="links-table" onclick="play()">Defense</a>
+                                                </div>
+                                                <div class="col-5">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/8/88/Lacerator.png/20px-Lacerator.png" alt="Lifesteal">
+                                                    <a class="links-table" onclick="play()">Lifesteal</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/1/12/Boss_Health_Bar_percent.png/20px-Boss_Health_Bar_percent.png" alt="Boss Health Bar">
+                                                    <a class="links-table" onclick="play()">Boss Health Bar</a>
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/a/a3/Revengeance_Indicator.png/20px-Revengeance_Indicator.png" alt="Difficulty">
+                                                    <a class="links-table" onclick="play()">Difficulty</a>
+                                                </div>
+                                                <div class="col-5">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/2/21/Music_Box_%28Anahita%27s_Lure%29.png/20px-Music_Box_%28Anahita%27s_Lure%29.png" alt="Music">
+                                                    <a class="links-table" onclick="play()">Music</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/c/cb/Terminus.png/20px-Terminus.png" alt="Boss Rush">
+                                                    <a class="links-table" onclick="play()">Boss Rush</a>
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/e/ed/Ancient_Bone_Dust.png/20px-Ancient_Bone_Dust.png" alt="Drops">
+                                                    <a class="links-table" onclick="play()">Drops</a>
+                                                </div>
+                                                <div class="col-5">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/c/c8/The_Transformer.png/20px-The_Transformer.png" alt="Rarity">
+                                                    <a class="links-table" onclick="play()">Rarity</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/e/ea/Soaring.png/20px-Soaring.png" alt="Buffs">
+                                                    <a class="links-table" onclick="play()">Buffs</a>
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/3/3e/Enchantment_Rune_Aflame.png/20px-Enchantment_Rune_Aflame.png" alt="Enchanting">
+                                                    <a class="links-table" onclick="play()">Enchanting</a>
+                                                </div>
+                                                <div class="col-5">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/a/a8/Rogue_Emblem.png/20px-Rogue_Emblem.png" alt="Rogue">
+                                                    <a class="links-table" onclick="play()">Rogue</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/3/36/Cog_%28Calamity%29.png/20px-Cog_%28Calamity%29.png" alt="Configuration options">
+                                                    <a class="links-table" style="font-size: 12px;" onclick="play()">Configuration options</a>
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/e/e8/Acid_Rain_Icon.png/20px-Acid_Rain_Icon.png" alt="Events">
+                                                    <a class="links-table" onclick="play()">Events</a>
+                                                </div>
+                                                <div class="col-5">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/8/84/Astral_Grass_Seeds.png/20px-Astral_Grass_Seeds.png" alt="Secret world seeds">
+                                                    <a class="links-table" onclick="play()">Secret world seeds</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/e/e5/Static_Refiner.png/20px-Static_Refiner.png" alt="Crafting">
+                                                    <a class="links-table" onclick="play()">Crafting</a>
+                                                </div>
+                                                <div class="col-3">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/4/48/Supreme_Bait_Tackle_Box_Fishing_Station.png/20px-Supreme_Bait_Tackle_Box_Fishing_Station.png" alt="Fishing">
+                                                    <a class="links-table" onclick="play()">Fishing</a>
+                                                </div>
+                                                <div class="col-5">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/e/ee/Stat_Meter.png/20px-Stat_Meter.png" alt="Status messages">
+                                                    <a class="links-table" onclick="play()">Status messages</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/c/c1/Nebulous_Core.png/20px-Nebulous_Core.png" alt="Death prevention">
+                                                    <a class="links-table" onclick="play()">Death prevention</a>
+                                                </div>
+                                                <div class="col-3">
+                                                </div>
+                                                <div class="col-5">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="https://calamitymod.wiki.gg/images/7/76/Abombination.png" alt="Abombination" id="Abombination">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" id="bottom-tables">
+                                <div class="col-7 border border-danger rounded">
+                                    <div>
+                                        <div>
+                                            <table class="table">
+                                                <th><a class="links-table" onclick="play()"><b>Biomes and Structures</b></a></th>
+                                            </table>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="https://calamitymod.wiki.gg/images/f/f1/Bestiary_Abyss_Layer_4.png" alt="Abyss Layer 4">
+                                                    <a class="links-table" onclick="play()">Abyss</a>
+                                                </div>
+                                                <div class="col-6">
+                                                    <img src="https://terraria.wiki.gg/images/6/66/Bestiary_Surface_Mushroom.png" alt="Surface Mushroom">
+                                                    <a class="links-table" onclick="play()">Glowing Mushroom biome</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="https://calamitymod.wiki.gg/images/3/30/Bestiary_Arsenal_Lab.png" alt="Arsenal Labs">
+                                                    <a class="links-table" onclick="play()">Arsenal Labs</a>
+                                                </div>
+                                                <div class="col-6">
+                                                    <img src="https://terraria.wiki.gg/images/a/a8/Bestiary_The_Jungle.png" alt="The Jungle">
+                                                    <a class="links-table" onclick="play()">Jungle</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="https://calamitymod.wiki.gg/images/d/d6/Bestiary_Astral_Surface.png" alt="Astral Surface">
+                                                    <a class="links-table" onclick="play()">Astral Infection</a>
+                                                </div>
+                                                <div class="col-6">
+                                                    <img src="https://terraria.wiki.gg/images/a/aa/Bestiary_Ocean.png" alt="Ocean">
+                                                    <a class="links-table" onclick="play()">Ocean</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="https://calamitymod.wiki.gg/images/2/26/Bestiary_Brimstone_Crags.png" alt="Brimstone Crags">
+                                                    <a class="links-table" onclick="play()">Brimstone Crag</a>
+                                                </div>
+                                                <div class="col-6">
+                                                    <img src="https://calamitymod.wiki.gg/images/a/aa/Exodium_Cluster.png" alt="Exodium Cluster">
+                                                    <a class="links-table" onclick="play()">Planetoids</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="https://terraria.wiki.gg/images/5/52/Bestiary_Caverns.png" alt="Caverns">
+                                                    <a class="links-table" onclick="play()">Caverns</a>
+                                                </div>
+                                                <div class="col-6">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/b/b2/Gladiator%27s_Locket.png/30px-Gladiator%27s_Locket.png" alt="Gladiators Locket">
+                                                    <a class="links-table" onclick="play()">Shrines</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="https://terraria.wiki.gg/images/a/a8/Bestiary_Desert.png" alt="Desert">
+                                                    <a class="links-table" onclick="play()">Desert</a>
+                                                </div>
+                                                <div class="col-6">
+                                                    <img src="https://terraria.wiki.gg/images/f/fa/Bestiary_Snow.png" alt="Snow">
+                                                    <a class="links-table" onclick="play()">Snow biome</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="https://terraria.wiki.gg/images/8/81/Bestiary_The_Dungeon.png" alt="The Dungeon">
+                                                    <a class="links-table" onclick="play()">Dungeon</a>
+                                                </div>
+                                                <div class="col-6">
+                                                    <img src="https://terraria.wiki.gg/images/1/13/Bestiary_Sky.png" alt="Sky">
+                                                    <a class="links-table" onclick="play()">Space</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="https://terraria.wiki.gg/images/a/a8/Demonite_Ore.png" alt="Demonite Ore">
+                                                    <img src="https://terraria.wiki.gg/images/c/c5/Crimtane_Ore.png" alt="Crimtane Ore">
+                                                    <a class="links-table" onclick="play()">Evil Island</a>
+                                                </div>
+                                                <div class="col-6">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="https://calamitymod.wiki.gg/images/4/47/Bestiary_Sulphurous_Sea.png" alt="Sulphurous Sea">
+                                                    <a class="links-table" onclick="play()">Sulphurous_Sea</a>
+                                                </div>
+                                                <div class="col-6">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="https://calamitymod.wiki.gg/images/5/5e/Bestiary_Sunken_Sea.png" alt="Sunken Sea">
+                                                    <a class="links-table" onclick="play()">Sunken Sea</a>
+                                                </div>
+                                                <div class="col-6">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="https://terraria.wiki.gg/images/4/42/Bestiary_Surface.png" alt="Surface">
+                                                    <a class="links-table" onclick="play()">Surface</a>
+                                                </div>
+                                                <div class="col-6">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="https://terraria.wiki.gg/images/a/ab/Bestiary_The_Corruption.png" alt="The Corruption">
+                                                    <a class="links-table" onclick="play()">The Corruption</a>
+                                                </div>
+                                                <div class="col-6">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="https://terraria.wiki.gg/images/6/63/Bestiary_The_Crimson.png" alt="The Crimson">
+                                                    <a class="links-table" onclick="play()">The Crimson</a>
+                                                </div>
+                                                <div class="col-6">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="https://terraria.wiki.gg/images/b/b7/Bestiary_The_Hallow.png" alt="The Hallow">
+                                                    <a class="links-table" onclick="play()">The Hallow</a>
+                                                </div>
+                                                <div class="col-6">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="https://terraria.wiki.gg/images/3/30/Bestiary_The_Underworld.png" alt="the Under World">
+                                                    <a class="links-table" onclick="play()">The Under World</a>
+                                                </div>
+                                                <div class="col-6">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="https://calamitymod.wiki.gg/images/thumb/0/04/Atlas.png/55px-Atlas.png" alt="Atlas" id="Atlas">
+                                    </div>
+                                </div>
+                                <div class="col-2 border border-danger rounded">
+                                    <div>
+                                        <div>
+                                            <table class="table"> 
+                                                <th><a class="links-table" onclick="play()"><b>NPCs</b></a></th>
+                                            </table>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/0/0e/Archmage_map.png/24px-Archmage_map.png" alt="Archmage">
+                                                    <a class="links-table" onclick="play()">Archmage</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img src="https://calamitymod.wiki.gg/images/c/cc/Bandit_map.png" alt="Bandit">
+                                                    <a class="links-table" onclick="play()">Bandit</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/b/bf/Brimstone_Witch_map.png/24px-Brimstone_Witch_map.png" alt="Brimstone Witch">
+                                                    <a class="links-table" onclick="play()">Brimstone Witch</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/8/81/Drunk_Princess_map.png/24px-Drunk_Princess_map.png" alt="Drunk Princess">
+                                                    <a class="links-table" onclick="play()">Drunk Princess</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/4/49/Sea_King_map.png/24px-Sea_King_map.png" alt="Sea King">
+                                                    <a class="links-table" onclick="play()">Sea King</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="https://calamitymod.wiki.gg/images/c/c7/Archmage.png" alt="Archmage" id="Archmage">
+                                    </div>
+                                </div>
+                                <div class="col-3 border border-danger rounded">
+                                    <div>
+                                        <div>
+                                            <table class="table"> 
+                                                <th><b>Resources</b></th>
+                                            </table>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h6 class="text-white">Resources</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/7/7f/Demonshade_Breastplate.png/20px-Demonshade_Breastplate.png" alt="Demonshade Breastplate">
+                                                    <a class="links-table" onclick="play()">Armor progression</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/b/b6/Deadshot_Brooch.png/20px-Deadshot_Brooch.png" alt="Deadshot Brooch">
+                                                    <a class="links-table" onclick="play()">Class setups</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img src="https://terraria.wiki.gg/images/thumb/1/17/Tinkerer%27s_Workshop.png/20px-Tinkerer%27s_Workshop.png" alt="Tinkerers Workshop">
+                                                    <a class="links-table" onclick="play()">Community modifications</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/4/46/Low_Orbit_Study_Log.png/20px-Low_Orbit_Study_Log.png" alt="Low Orbit Study Log">
+                                                    <a class="links-table" onclick="play()">Concept art</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img src="https://terraria.wiki.gg/images/thumb/9/98/Map_Icon_Guide.png/20px-Map_Icon_Guide.png" alt="The Guide">
+                                                    <a class="links-table" onclick="play()">Guides</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/9/93/Desert_Scourge_%28Lore%29.png/20px-Desert_Scourge_%28Lore%29.png" alt="Lore">
+                                                    <a class="links-table" onclick="play()">Lore</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img src="https://terraria.wiki.gg/images/thumb/e/ed/Cog.png/20px-Cog.png" alt="Cog">
+                                                    <a class="links-table" onclick="play()">Mod calls</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/6/63/Calamity_Logo.png/20px-Calamity_Logo.png" alt="Calamity Logo">
+                                                    <a class="links-table" onclick="play()">Mod progression</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img src="https://calamitymod.wiki.gg/images/thumb/2/2e/Portabulb.png/20px-Portabulb.png" alt="Portabulb">
+                                                    <a class="links-table" onclick="play()">Vanilla changes</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img src="https://terraria.wiki.gg/images/thumb/2/29/Hermes_Boots.png/20px-Hermes_Boots.png" alt="Hermes Boots">
+                                                    <a class="links-table" onclick="play()">Vanilla item recipes</a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h6 class="text-white" onclick="play()">Tools</h6>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img src="https://terraria.wiki.gg/images/thumb/9/91/Work_Bench.png/20px-Work_Bench.png" alt="Work Bench">
+                                                    <a class="links-table" onclick="play()">Recipe finder</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="https://calamitymod.wiki.gg/images/3/32/Aquatic_Scourge_%28Lore%29.png" alt="Resource" id="Resource">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-2 mb-3">
+                                <div class="d-flex justify-content-center">
+                                    <div class="border border-danger rounded px-5 py-1"><a style="color: #5a93cc;text-decoration: none;" href="#"  onclick="play()">Changes to this main page can be proposed here.</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4" id="footer-category">
+                        <p class="text-white" style="border: 1px solid hsl(212, 9%, 50%);"><a class="links-table">Category</a>: <a class="links-table">Calamity Mod Wiki</a></p>
+                   </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column align-items-end pe-4">
+                <div id="footer-infor">
+                    <div>
+                        <p class="text-white">This page was last edited on 3 March 2024, at 21:16.</p>
+                        <p class="text-white">Pages that were created prior to March 2022 are from the Fandom Calamity Mod wiki.</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img src="https://commons.wiki.gg/images/b/bd/CC-BY-NC-SA.svg" alt="CC-BY-NC-SA">
+                        <span class="text-white">Page content is under the <a class="links-table" onclick="play()">Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 License</a> unless otherwise noted.</span>
+                    </div>
+                </div>
+                <div>
+                    <a id="wikimedia" href="https://www.mediawiki.org/wiki/MediaWiki" onclick="play()">.</a>
+                </div>
+            </div>
+            <nav class="navbar header mt-4">
+                <div class="container-fluid row">
+                    <ul class="nav">
+                        <li class="col-4 nav-item text-center">
+                            <span class="text-white">A <a class="text-white wiki-link" href="#" onclick="play()">wiki.gg</a> Community</span>
+                        </li>
+                        <li class="col-4 nav-item text-center">
+                            <img src="https://calamitymod.wiki.gg/resources/assets/wiki-footer.png" alt="Wiki">
+                        </li>
+                        <li class="col-4 nav-item text-center">
+                            <span class="text-white"><a class="wiki-link" href="#" onclick="play()">Terms of Service</a>|<a class="wiki-link" href="#" onclick="play()">Privacy Policy</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
